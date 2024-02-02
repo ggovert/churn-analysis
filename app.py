@@ -11,7 +11,7 @@ df_1 = pd.read_csv("Telco-Customer-Churn.csv")
 
 @app.route("/")
 def loadPage():
-    return render_template("home.html", query="")
+    return render_template("./templates/home.html", query="")
 
 @app.route("/", methods=['POST'])
 def predict():
